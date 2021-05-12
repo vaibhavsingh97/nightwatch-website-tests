@@ -24,7 +24,7 @@ jobs:
         run: |
           echo $BROWSERSTACK_USER
         env:
-          BROWSERSTACK_USER: ${{ secrets.BROWSERSTACK_USER }}
+          BROWSERSTACK_USER: vaibhabv
       - name: npm install
         run: |
           npm install
