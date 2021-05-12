@@ -137,6 +137,7 @@ module.exports = {
       // More info on configuring capabilities can be found on:
       // https://www.browserstack.com/automate/capabilities?tag=selenium-4
       desiredCapabilities: {
+        build: 'nightwatch-website-test',
         'bstack:options': {
           local: 'false',
           userName: '${BROWSERSTACK_USER}',
@@ -178,6 +179,21 @@ module.exports = {
         'bstack:options': {
           os: 'Windows',
           osVersion: '10',
+          local: 'false',
+          seleniumVersion: '3.5.2',
+          resolution: '1366x768',
+        },
+      },
+    },
+
+    'browserstack.safari': {
+      extends: 'browserstack',
+      desiredCapabilities: {
+        browserName: 'Safari',
+        browserVersion: '14.0',
+        'bstack:options': {
+          os: 'OS X',
+          osVersion: 'Big Sur',
           local: 'false',
           seleniumVersion: '3.5.2',
           resolution: '1366x768',

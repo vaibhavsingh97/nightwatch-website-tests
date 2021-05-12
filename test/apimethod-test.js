@@ -8,18 +8,17 @@ module.exports = {
     this.apiPage.navigate();
   },
 
-  'navigate to an individual api method page' (client) {
+  'navigate to an individual api method page': function (client) {
     this.apiMethodPage.navigate({
-      apiMethod: 'clearValue'
+      apiMethod: 'clearValue',
     });
 
-    client.expect.title().to.startWith('clearValue');
+    client.pause(1000).expect.title().to.startWith('clearValue');
 
-    this.apiMethodPage.section.container
-      .expect.element('@header').text.to.contain('.clearValue()');
+    this.apiMethodPage.section.container.expect.element('@header').text.to.contain('.clearValue()');
   },
 
   after(client) {
     client.end();
-  }
+  },
 };
