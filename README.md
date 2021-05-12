@@ -6,7 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/nightwatchjs/nightwatch/badge.svg?branch=master&service=github)](https://coveralls.io/github/nightwatchjs/nightwatch?branch=master)
 ***
 Nightwatch.js example tests which run against the [Nightwatch.js](http://nightwatchjs.org) documentation website, using Firefox.
-nnm lkmkn m
+nnm lkmkn mlkmlkms
 ## 1. Install Firefox
 Visit the Mozilla Firefox website: https://www.mozilla.org/en-US/firefox/new/
 
