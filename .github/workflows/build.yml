@@ -20,6 +20,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+      - name: check environment variable
+        run: |
+          echo $BROWSERSTACK_USER
+        env:
+          BROWSERSTACK_USER: ${{ secrets.BROWSERSTACK_USER }}
       - name: npm install
         run: |
           npm install
